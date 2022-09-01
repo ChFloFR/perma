@@ -1,0 +1,47 @@
+DANS APPLICATION.JS
+
+    vérifier que les requêtes axios utilisent bien les bonnes adresses 
+        car dans le cours, bien que ce soit en local :
+            "http://localhost.SERVEURANIMAUX/front/animaux/${famille/${continent}")
+            .then(reponse => {
+                this.setState({listeContinents:Object.values(reponse.data)});
+            })
+
+    Je n'ai pas mis la lecture  du dossier et des tables en questions
+
+    DANS LE RETURN
+
+        <select du Facilite :
+            vérifier la bonne information qui doit être à la place de {facilite.nom_entetien}
+            </option>
+
+
+DANS FORMULAIRE.JS
+    Installer formik et yup pour l'usage de certains modules -> détaillé dans le cours React
+
+    - quitter le serveur Ctrl + c
+    - puis
+        npm install --save formik yup
+
+    RELANCER npm start.
+
+
+DANS API.CONTROLLER.PHP
+    - ligne 62 : changer l'origine d'où proviennent les infos (permakids.com)
+    
+    - Dernières lignes commentées : tester si les commandes de traitement fonctionnent avec un véritable serveur en ligne
+
+DANS INDEX.PHP
+    - les getFamille, getFacilite, getConseils ne sont pas pris en compte
+
+DANS ADMIN.CONTROLLER.PHP   &&&&&&&&&& MA BDD 
+    - créer un mot de passe avec l'admin ---- voir chapitre 41 du cours React
+    - ET SURTOUT, quand c'est fait, la partie public function connexion doit être vide
+
+DANS FAMILLE MANAGER
+
+    regarder et corriger les requetes avec Culture !!!
+
+DANS CULTURE MANAGER
+
+    -- est ce l'id_conseil à attraper ou l'id_item de la table_conseils ?
